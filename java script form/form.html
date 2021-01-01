@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="decsription" content="html and java script">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="keywords" content = "html,java script">
+		<title>java script form event handelrs</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/form.css">
+		<script src="assets/js/form.js"></script>
+	</head>
+	<body>
+		<div class="frm_div">
+			<h2><u>Form Validation</u></h2>
+			<form id="frm" name="frm" method="Post">
+				<div>
+					<label>Name : </label>
+					<input type="text" onkeypress ="eventName(eve)" name="name" id="name">
+					<p id="nameErr"> </p>
+				</div><br>
+				<div>
+					<label>Phone Number : </label>
+					<input type="text" class="num_lab" onkeypress="markPress(event)" name="phnnum" id="phnnum">
+					<p id="phoneErr"> </p>
+				</div><br>
+				<div>
+					<label>DOB : </label>
+					<input type="Date" class="num_la" name="dob" id="dob">
+					<p id="dobErr"> </p>
+				</div><br>			
+				<div>
+					<label>Email : </label>
+					<input type="text" class="num_lab" name="email" id="email">
+					<p id="emailErr"> </p>
+				</div><br>
+				<div>
+					<label>Gender : </label>
+					<input type="radio" id="female" name="gender" value="female">Female
+					<input type="radio" id="male" name="gender" value="male">Male
+					<p id="genderErr"> </p>
+				</div><br>
+				<div>
+					<label>languages Known : </label>
+					<input type="checkbox" id="telugu" name="language" value="telugu">Telugu
+					<input type="checkbox" id="english" name="language" value="english">English
+					<input type="checkbox" id="tamil" name="language" value="tamil">Tamil
+					<p id="languageErr"> </p>
+				</div><br>
+				<div>
+					<label>State : </label>
+					<select id="state" name="state">
+						<option></option>
+						<option>Andhra Pradesh</option>
+						<option>Bihar</option>
+						<option>Tamilnadu</option>
+						<option>Telengana</option>
+						<option>Kerala</option>
+						<option>Karnataka</option>
+						<option>Maharastra</option>
+						<option>Madhya Pradesh</option>
+						<option>Uthar Pradesh</option>
+					</select>
+					<p id="stateErr"> </p>
+				</div><br>
+				<div>
+					<label>Address : </label>
+					<textarea cols="40" rows="6" id="address" name="address">
+					</textarea>
+					<p id="addressErr"> </p>
+				</div><br>
+				<div>
+					<label>File Upload : </label>
+					<input type="file" name="myfile" id="myfile">
+					<p id="fileErr"> </p>
+				</div><br>
+			</form>
+			<button class="btn" id="btn" onclick="myFunction()">submit</button>
+		</div>
+	</body>
+</html>	
